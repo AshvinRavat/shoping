@@ -26,10 +26,10 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 - Clone or Download project
 - INSTALL COMPOSER : composer install
 - INSTALL NPM : npm install & npm run dev (for local development)  
-- Generate Application key : php artisan key : generate  
 - Create .env file by copying or new .env file & put content of .env.example in to 
 .env
+- Generate Application key : php artisan key:generate  
 - Set Database Connection in env. provide your Database Configuration like 
 user-name, password, database-name.
-
+- Rub Application: php artisan:serve
 
