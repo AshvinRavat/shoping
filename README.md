@@ -14,7 +14,8 @@ It's an E-commerce Web Application build on Laravel("https://laravel.com")
 #### How To Set Up project
 
 - Clone or Download project
-- INSTALL COMPOSER : composer install
+- INSTALL COMPOSER : 
+    composer install
 - INSTALL NPM : npm install & npm run dev (for local development)  
 - Create .env file by copying or new .env file & put content of .env.example in to 
 .env
