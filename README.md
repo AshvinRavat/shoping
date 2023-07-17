@@ -11,7 +11,7 @@
 
 It's an E-commerce Web Application build on Laravel("https://laravel.com")
 
-## How To Set Up project
+#### How To Set Up project
 
 - Clone or Download project
 - INSTALL COMPOSER : composer install
@@ -21,5 +21,5 @@ It's an E-commerce Web Application build on Laravel("https://laravel.com")
 - Generate Application key : php artisan key:generate  
 - Set Database Connection in env. provide your Database Configuration like 
 user-name, password, database-name.
-- Rub Application: php artisan:serve
-
+- Rub Application: php artisan:serve 
+- To migrate & Create Users  : php artisan migrate --seed 

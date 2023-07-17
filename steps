@@ -1,0 +1,86 @@
+migrations : 
+
+users : 
+Carts,
+orders,
+
+
+Admin Side :
+
+Products :
+products,
+categories,
+tags.
+
+orders  :
+
+
+users : 
+
+    id, name, 
+    email, phone, 
+    address, city, zip code latitude, longitude,
+    user_type :
+    Admin : 1
+    Customers : 0 -> default
+
+categories : 
+    id 
+    name 
+
+tags : 
+    id 
+    name.
+
+
+
+products :
+
+    id, category_id, tag_id, 
+    image, price, description,
+
+    qty, stock(current items).
+    published(this will list product to customer) : Active -> default, Pending. Deactivate.
+
+    Payment Options : COD, ONLINE, VIA STRIPE -> default.
+
+
+product_images
+    id,
+    product_id
+    path.
+
+
+cart_items :
+    id,
+    user_id,
+    total_items
+    total_amount
+
+carts :
+    id
+    cart_item_id
+    product_id
+    price,
+    items(qty).
+
+
+orders :
+    id,
+    user_id,
+    total_amount
+    total_items
+    User Details:
+    address.
+    payment_status : pending -> default, success, fail.
+
+order_items :
+    id,
+    order_id
+    product_id
+    price,
+    items(qty).
+
+
+    
+
