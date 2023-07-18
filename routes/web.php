@@ -39,7 +39,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::post('login', [LoginController::class, 'login'])->name('login')->middleware('guest');
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
-    Route::get('/', function () {
-        return view('admin.index');
-    })->name('index')->middleware('auth');
+    Route::middleware('auth')->group(function () {
+         Route::get('/', function () {
+            return view('admin.index');
+        })->name('index');
+
+        
+    });
 });
