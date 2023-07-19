@@ -1,5 +1,4 @@
 import './bootstrap';
-import jQuery from 'jquery';
 
 import Alpine from 'alpinejs';
 
@@ -15,3 +14,8 @@ import * as bootstrap from 'bootstrap';
 import poper from 'poper';
 
 import "./admin/adminlte";
+
+import "./alert";
+import { eventListeners } from '@popperjs/core';
+
+ 
