@@ -29,6 +29,8 @@ class ProfileController extends Controller
 
        User::where('id', auth()->id())
        ->update($admin);
+
+       return back()->with('success', 'Profile update successfully');
     }
 
 
@@ -44,6 +46,8 @@ class ProfileController extends Controller
         $request->user()->update([
             'password' => Hash::make($validated['password']),
         ]);
+
+        return back()->with('success', 'Password update successfully');
     }
 
 }

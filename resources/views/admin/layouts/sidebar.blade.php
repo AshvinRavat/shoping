@@ -26,7 +26,7 @@
                <ul class="nav nav-pills nav-sidebar flex-column"  role="menu" data-accordion="false">
                   <li class="nav-item">
                     <li class="nav-item">
-                        <a href="pages/mailbox/mailbox.html" class="nav-link">
+                        <a href="{{ route('admin.profile_index') }}" class="nav-link">
                           <i class="fa-solid fa-user me-2"></i>
                           <p>Profile</p>
                         </a>
