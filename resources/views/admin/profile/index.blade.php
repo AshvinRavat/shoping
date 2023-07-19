@@ -8,6 +8,7 @@
                     <h1 class="m-0">Profile</h1>
                 </div>
             </div>
+            @include('admin.layouts.message')
         </div>
     </div>
     <section class="content">
@@ -18,6 +19,7 @@
                         <div class="card-header">
                             <h3 class="card-title">Profile Update</h3>
                         </div>
+
                         
                         <form action="{{ route('admin.profile_update')}}" method="POST">
                             @csrf
@@ -55,7 +57,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Mobile</label>
-                                    <input type="" 
+                                    <input type="password" 
                                         id="phone"
                                         name="phone"
                                         class="form-control @error('phone')
@@ -89,7 +91,7 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="current-password">Current Password</label>
-                                    <input type="" 
+                                    <input type="password" 
                                         id="current-password"
                                         name="current_password"
                                         class="form-control @error('current_password')
@@ -104,7 +106,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="password">New Password</label>
-                                    <input type="" 
+                                    <input type="password" 
                                         id="password"
                                         name="password"
                                         class="form-control @error('password')
@@ -119,7 +121,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="password_confirmation">Confirm Password</label>
-                                    <input type="" 
+                                    <input type="password" 
                                         id="password_confirmation"
                                         name="password_confirmation"
                                         class="form-control @error('password_confirmation')
@@ -140,13 +142,9 @@
                         </form>
                     </div>
                 </div>
-                  <button type="button" class="btn btn-success swalDefaultSuccess">
-                  Launch Success Toast
-                </button>
             </section>
         </div>
     </div>
-  
 @endsection
 
 
