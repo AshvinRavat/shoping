@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\ProfileController as AdminProfileController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,6 +45,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
             return view('admin.index');
         })->name('index');
 
-        
+
+        Route::controller(AdminProfileController::class)->group(function () {
+            Route::get('profile', 'index')->name('profile_index');
+            Route::post('profile', 'profileUpdate')->name('profile_update');
+            Route::post('password-update', 'updatePassword')->name('password_update');
+        });
     });
 });
