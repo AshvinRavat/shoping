@@ -13,7 +13,7 @@ It's an E-commerce Web Application build on Laravel("https://laravel.com")
 
 #### How To Set Up project
 
-- Clone or Download("/AshvinRavat/shoping/archive/refs/heads/main.zip") project
+- Clone or Download("/https://github.com/AshvinRavat/shoping/archive/refs/heads/main.zip") project
 - INSTALL COMPOSER : 
     composer install
 - INSTALL NPM : npm install & npm run dev (for local development)  
