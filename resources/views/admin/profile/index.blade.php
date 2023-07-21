@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Mobile</label>
-                                    <input type="password" 
+                                    <input type="number" 
                                         id="phone"
                                         name="phone"
                                         class="form-control @error('phone')

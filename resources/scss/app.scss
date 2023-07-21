@@ -1,9 +1,57 @@
-
-@import "bootstrap/scss/bootstrap";
-
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./admin/bootstrap.min.scss";
 @import "./admin/overlay-scrollbar.scss";
 @import "./admin/adminlite.min.css";
 
 @import "./admin/alter.scss";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+@import "../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css";
+
+@import "../../node_modules/cropperjs/src/css/cropper.css";
+
+ /* Custom CSS for the hover effect */
+        // .image-container {
+        //     position: relative;
+        //     display: inline-block;
+        // }
+
+        // .overlay-button {
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     opacity: 0;
+        //     transition: opacity 0.2s ease-in-out;
+        // }
+
+        // .image-container:hover .overlay-button {
+        //     opacity: 1;
+        // }
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to your preference */
+  color: #fff; /* Adjust the text color */
+  font-size: 16px; /* Adjust the font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Start with opacity 0, so it's hidden initially */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image-container:hover .hover-overlay {
+  opacity: 1; /* When hovering over the image-container, show the hover-overlay */
+}
+
+
+
+ 

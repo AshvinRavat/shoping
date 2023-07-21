@@ -15,6 +15,5 @@
                 <div class="row"></div>
             </div>
         </section>
-      </div>
-  </div>
+    </div>
 @endsection
